@@ -1,10 +1,6 @@
 export interface StringMap {
   [key: string]: string;
 }
-export interface Uploads {
-  userId: string;
-  data: FileUploads[];
-}
 export interface Thumbnail {
   thumbnail?: string;
   standardThumbnail?: string;
@@ -12,7 +8,7 @@ export interface Thumbnail {
   maxresThumbnail?: string;
   hightThumbnail?: string;
 }
-export interface FileUploads extends Thumbnail {
+export interface FileInfo extends Thumbnail {
   source?: string;
   type: string;
   url: string;

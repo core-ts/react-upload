@@ -1,11 +1,6 @@
 import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
-import ReactCrop, {
-  centerCrop,
-  Crop,
-  makeAspectCrop,
-  PixelCrop,
-} from 'react-image-crop';
+import ReactCrop, { centerCrop, Crop, makeAspectCrop, PixelCrop } from 'react-image-crop';
 // import 'react-image-crop/dist/ReactCrop.css';
 
 export interface CropImageProps {

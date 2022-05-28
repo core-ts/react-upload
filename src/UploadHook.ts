@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { PixelCrop } from 'react-image-crop';
-import { FileUploads } from './model';
+import { FileInfo } from './model';
 
 // const urlGetImg = 'http://localhost:8082/my-profile/image';
 export interface State {
@@ -60,7 +60,7 @@ export const useUpload = (props: Props) => {
     }
   };
 
-  const upload = async (id: string): Promise<FileUploads[]> => {
+  const upload = async (id: string): Promise<FileInfo[]> => {
     if (!file) { return []; }
     let fileCustomSizes: File[] = [];
     setState((pre) => ({ ...pre, loading: true }));

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { FileUploads } from './model';
+import { FileInfo } from './model';
 
-export const RenderItem = (props: { item: FileUploads }) => {
+export const RenderItem = (props: { item: FileInfo }) => {
   if (props.item.type === 'youtube') {
     return (React.createElement('div', { className: 'col xl11 l11 m11 s11' },
       React.createElement('div', { className: 'data-item' },
