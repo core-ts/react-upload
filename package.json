@@ -1,6 +1,6 @@
 {
   "name": "reactx-upload",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "upload",
   "main": "./lib/index.js",
   "types": "./src/index.ts",

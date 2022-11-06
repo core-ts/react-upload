@@ -72,7 +72,7 @@ export const useUpload = (props: Props) => {
         bodyFormData.append('files', fileCustom);
       });
     } else {
-      bodyFormData.append('file', file);
+      bodyFormData.append('files', file);
     }
 
     bodyFormData.append('id', id || '');
